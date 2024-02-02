@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Catalogue</title>
+  <!-- Load an icon library -->
+  <link rel="stylesheet" href="^5^">
+  <!-- Add the CSS styles for the catalogue-container class -->
+  <style>
+    /* Style the navigation bar */
+    .navbar {
+      width: 100%;
+      background-color: #555;
+      overflow: auto;
+    }
+
+    /* Style the navigation links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Change the color on hover */
+    .navbar a:hover {
+      background-color: #000;
+    }
+
+    /* Style the \"active\" element to highlight the current page */
+    .navbar a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    /* Align the search link to the right of the menu */
+    .navbar a:last-child {
+      float: right;
+    }
+
+    /* Add some space between the user icon and the search link */
+    .navbar i {
+      margin-left: 8px;
+    }
+    .catalogue-container {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+   <!-- Create the navigation bar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="library.html">Library</a>
+    <a href="catalogue.htmp">Catalogue</a>
+    <a href="login.html">Login</a>
+    <!-- Add a search link to the menu -->
+    <a href="search.html">Search</a>
+    <!-- Add a user icon to the menu -->
+    <a href="#"><i class="fa fa-user"></i></a>
+  </div>
+  <!-- Create a heading for the catalogue -->
+    <h1>Catalogue</h1>
+  <!-- Create a container for the catalogue -->
+  <div class="catalogue-container">
+    
+    <!-- Create a table for the book and user details -->
+    <table class="w3-table-all">
+      <tr>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Book Name</th>
+        <th>Book Number</th>
+        <th>Quantity</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>User Type</th>
+      </tr>
+      <tr>
+        <td>Alice</td>
+        <td>Mathematics</td>
+        <td>The Hitchhiker's Guide to the Galaxy</td>
+        <td>9780345391803</td>
+        <td>1</td>
+        <td>2024-01-15</td>
+        <td><i class="fa fa-check"></i></td>
+        <td><span class="w3-tag w3-green">Student</span></td>
+      </tr>
+      <tr>
+        <td>Bob</td>
+        <td>Physics</td>
+        <td>The Lord of the Rings</td>
+        <td>9780618640157</td>
+        <td>3</td>
+        <td>2024-01-20</td>
+        <td><i class="fa fa-times"></i></td>
+        <td><span class="w3-tag w3-red">Teacher</span></td>
+      </tr>
+      <tr>
+        <td>Charlie</td>
+        <td>Chemistry</td>
+        <td>Harry Potter and the Philosopher's Stone</td>
+        <td>9780747532699</td>
+        <td>2</td>
+        <td>2024-01-25</td>
+        <td><i class="fa fa-check"></i></td>
+        <td><span class="w3-tag w3-green">Student</span></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

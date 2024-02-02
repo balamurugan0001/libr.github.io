@@ -1,0 +1,117 @@
+<html>
+<head>
+  <title>LocalLib</title>
+  <style>
+    /* Style the navigation bar */
+    .navbar {
+      width: 100%;
+      background-color: #555;
+      overflow: auto;
+    }
+
+    /* Style the navigation links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Change the color on hover */
+    .navbar a:hover {
+      background-color: #000;
+    }
+
+    /* Style the \"active\" element to highlight the current page */
+    .navbar a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    /* Align the search link to the right of the menu */
+    .navbar a:last-child {
+      float: right;
+    }
+
+    /* Add some space between the user icon and the search link */
+    .navbar i {
+      margin-left: 8px;
+    }
+
+    /* Style the content */
+    .content {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the content heading */
+    .content h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 36px;
+      color: #333;
+    }
+  </style>
+  <!-- Load an icon library -->
+  <link rel="stylesheet" href="^5^">
+</head>
+<body style="background-image: linear-gradient(pink, purple);">
+
+  <!-- Create the navigation bar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="library.html">Library</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="login.html">Login</a>
+    <!-- Add a search link to the menu -->
+    <a href="search.html">Search</a>
+    <!-- Add a user icon to the menu -->
+    <a href="#"><i class="fa fa-user"></i></a>
+  </div>
+
+  <!-- Create the content -->
+  <div class="content">
+    <h1>Local Library</h1>
+    <p>Some popular books</p>
+    <!-- Add a book list to the content -->
+    <h2>Books</h2>
+    <table class="w3-table-all">
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Cover</th>
+      </tr>
+      <tr>
+        <td>The Hitchhiker's Guide to the Galaxy</td>
+        <td>Douglas Adams</td>
+        <td><img src="https://images-na.ssl-images-amazon.com/images/I/51MzLZj8nRL._SX331_BO1,204,203,200_.jpg" alt="The Hitchhiker's Guide to the Galaxy" width="100" height="150"></td>
+      </tr>
+      <tr>
+        <td>The Lord of the Rings</td>
+        <td>J.R.R. Tolkien</td>
+        <td><img src="https://images-na.ssl-images-amazon.com/images/I/51EstVXM1UL._SX331_BO1,204,203,200_.jpg" alt="The Lord of the Rings" width="100" height="150"></td>
+      </tr>
+      <tr>
+        <td>Harry Potter and the Philosopher's Stone</td>
+        <td>J.K. Rowling</td>
+        <td><img src="https://images-na.ssl-images-amazon.com/images/I/51ifu1aebKL._SX332_BO1,204,203,200_.jpg" alt="Harry Potter and the Philosopher's Stone" width="100" height="150"></td>
+      </tr>
+      <tr>
+        <td>To Kill a Mockingbird</td>
+        <td>Harper Lee</td>
+        <td><img src="https://images-na.ssl-images-amazon.com/images/I/51N-u8AsmdL._SX324_BO1,204,203,200_.jpg" alt="To Kill a Mockingbird" width="100" height="150"></td>
+      </tr>
+      <tr>
+        <td>1984</td>
+        <td>George Orwell</td>
+        <td><img src="https://images-na.ssl-images-amazon.com/images/I/41E1RgjQAKL._SX326_BO1,204,203,200_.jpg" alt="1984" width="100" height="150"></td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
+
