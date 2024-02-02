@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+  </style>
+</head>
+<body style="background-color: lightblue;">
+    <h2>Register</h2>
+    <form method="POST" action="{{ url_for('register') }}">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br>
+
+        <label for="register_id">Register ID (optional):</label>
+        <input type="text" name="register_id"><br>
+
+        <label for="username">Username:</label>
+        <input type="text" name="username" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" name="confirm_password" required><br>
+
+        <label for="contact_number">Contact Number:</label>
+        <input type="tel" name="contact_number" required><br>
+
+        <label for="user_type">User Type:</label>
+        <select name="user_type" required>
+            <option value="student">Student</option>
+            <option value="staff">Staff</option>
+        </select><br>
+
+        <input type="submit" value="Register">
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+</body>
+</html>
